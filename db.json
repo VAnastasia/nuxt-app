@@ -1,19 +1,246 @@
 {
-  "posts": [
+  "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Пуф BOSS",
+      "image": "1.jpg",
+      "price": 9999,
+      "description": "",
+      "size": "75x75",
+      "color": "Графит",
+      "guarantee": "36 месяцев",
+      "category": "Пуфы и кресла"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Пуф BOSS",
+      "image": "2.jpg",
+      "price": 9999,
+      "description": "",
+      "size": "75x75",
+      "color": "Серый",
+      "guarantee": "36 месяцев",
+      "category": "Пуфы и кресла"
+    },
+    {
+      "id": 3,
+      "name": "Пуф BOSS",
+      "image": "3.jpg",
+      "price": 9999,
+      "description": "",
+      "size": "75x75",
+      "color": "Бежевый",
+      "guarantee": "36 месяцев",
+      "category": "Пуфы и кресла"
+    },
+    {
+      "id": 4,
+      "name": "Пуф BOSS",
+      "image": "4.jpg",
+      "price": 9999,
+      "description": "",
+      "size": "75x75",
+      "color": "Песочный",
+      "guarantee": "36 месяцев",
+      "category": "Пуфы и кресла"
+    },
+    {
+      "id": 5,
+      "name": "Пуф BOSS",
+      "image": "5.jpg",
+      "price": 9999,
+      "description": "",
+      "size": "75x75",
+      "color": "Индиго",
+      "guarantee": "36 месяцев",
+      "category": "Пуфы и кресла"
+    },
+    {
+      "id": 6,
+      "name": "Диван МАДРИД",
+      "image": "6.jpg",
+      "price": 9999,
+      "description": "",
+      "size": "190x90",
+      "color": "Газета",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 7,
+      "name": "Диван МАДРИД",
+      "image": "7.jpg",
+      "price": 9999,
+      "description": "",
+      "size": "190x90",
+      "color": "Серый",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 8,
+      "name": "Диван МАДРИД",
+      "image": "8.jpg",
+      "price": 9999,
+      "description": "",
+      "size": "190x90",
+      "color": "Бежевый",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 9,
+      "name": "Диван МАДРИД",
+      "image": "9.jpg",
+      "price": 9999,
+      "description": "",
+      "size": "190x90",
+      "color": "Шоколадный",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 10,
+      "name": "МАДРИД",
+      "image": "10.jpg",
+      "price": 13999,
+      "description": "",
+      "size": "200x90",
+      "color": "Газета",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 11,
+      "name": "МАДРИД",
+      "image": "11.jpg",
+      "price": 13999,
+      "description": "",
+      "size": "200x90",
+      "color": "Бежевый",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 12,
+      "name": "МАДРИД",
+      "image": "12.jpg",
+      "price": 13999,
+      "description": "",
+      "size": "200x90",
+      "color": "Серый",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 13,
+      "name": "АТЛАНТА",
+      "image": "13.jpg",
+      "price": 16999,
+      "description": "",
+      "size": "220x105",
+      "color": "Бежевый",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 14,
+      "name": "АТЛАНТА",
+      "image": "14.jpg",
+      "price": 16999,
+      "description": "",
+      "size": "220x105",
+      "color": "Серый",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 15,
+      "name": "АТЛАНТА",
+      "image": "15.jpg",
+      "price": 16999,
+      "description": "",
+      "size": "220x105",
+      "color": "Синий",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 16,
+      "name": "АТЛАНТА",
+      "image": "16.jpg",
+      "price": 16999,
+      "description": "",
+      "size": "220x105",
+      "color": "Белый",
+      "guarantee": "18 месяцев",
+      "category": "Прямые диваны"
+    },
+    {
+      "id": 17,
+      "name": "МАРСЕЛЬ",
+      "image": "17.jpg",
+      "price": 24999,
+      "description": "",
+      "size": "260x165",
+      "color": "Песочный",
+      "guarantee": "18 месяцев",
+      "category": "Угловые диваны"
+    },
+    {
+      "id": 18,
+      "name": "МАРСЕЛЬ",
+      "image": "18.jpg",
+      "price": 24999,
+      "description": "",
+      "size": "260x165",
+      "color": "Шоколадный",
+      "guarantee": "18 месяцев",
+      "category": "Угловые диваны"
+    },
+    {
+      "id": 19,
+      "name": "МАРСЕЛЬ",
+      "image": "19.jpg",
+      "price": 24999,
+      "description": "",
+      "size": "260x165",
+      "color": "Графит",
+      "guarantee": "18 месяцев",
+      "category": "Угловые диваны"
+    },
+    {
+      "id": 20,
+      "name": "ДУБАЙ",
+      "image": "20.jpg",
+      "price": 29999,
+      "description": "",
+      "size": "300x155",
+      "color": "Бежевый",
+      "guarantee": "18 месяцев",
+      "category": "Угловые диваны"
+    },
+    {
+      "id": 21,
+      "name": "ДУБАЙ",
+      "image": "21.jpg",
+      "price": 29999,
+      "description": "",
+      "size": "300x155",
+      "color": "Графит",
+      "guarantee": "18 месяцев",
+      "category": "Угловые диваны"
+    },
+    {
+      "id": 22,
+      "name": "ДУБАЙ",
+      "image": "22.jpg",
+      "price": 29999,
+      "description": "",
+      "size": "300x155",
+      "color": "Шоколадный",
+      "guarantee": "18 месяцев",
+      "category": "Угловые диваны"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
