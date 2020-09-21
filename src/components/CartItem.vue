@@ -9,12 +9,12 @@
     <div class="cart-item__info">
       <div class="cart-item__count-block">
         <button class="btn">-</button>
-        <div class="cart-item__count">1</div>
+        <div class="cart-item__count">{{cartItem.count}}</div>
         <button class="btn">+</button>
       </div>
 
-      <button>Удалить</button>
-      <p>{{cartItem.price}}</p>
+      <a class="cart-item__delete" @click="deleteProduct">Удалить</a>
+      <p class="cart-item__price">{{parseInt(cartItem.price).toLocaleString('de-DE')}} &#8381;</p>
     </div>
 
   </div>
@@ -29,6 +29,14 @@ export default {
       default() {
         return {};
       },
+    },
+  },
+  mounted() {
+    this.$set(this.cartItem, 'count', 1);
+  },
+  methods: {
+    deleteProduct() {
+      this.$emit('deleteProduct');
     },
   },
 };
@@ -51,12 +59,11 @@ export default {
   .cart-item__count-block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
   }
 
   .cart-item__description {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     width: 50%;
     text-align: left;
   }
@@ -67,5 +74,14 @@ export default {
 
   .cart-item__image {
     width: 20%;
+  }
+
+  .cart-item__price {
+    font-size: 24px;
+  }
+
+  .cart-item__delete {
+    cursor: pointer;
+    text-decoration: underline;
   }
 </style>

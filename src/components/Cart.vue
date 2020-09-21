@@ -1,11 +1,21 @@
 <template>
   <div class="cart">
-    <h3>Корзина</h3>
-    <cart-item v-for="item in cartData" :key="item.id" :cartItem="item" />
+    <router-link :to="{name: 'catalog'}">
+      <div class="catalog__cart-count">Вернуться в каталог</div>
+    </router-link>
+    <h2>Корзина</h2>
+    <p v-if="!cartData.length">В корзине пусто</p>
+    <cart-item
+      v-for="(item, index) in cartData"
+      :key="item.id"
+      :cartItem="item"
+      @deleteProduct="deleteProduct(index)"
+    />
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 import CartItem from './CartItem.vue';
 
 export default {
@@ -19,6 +29,14 @@ export default {
       default() {
         return [];
       },
+    },
+  },
+  methods: {
+    ...mapActions([
+      'DELETE_PRODUCT',
+    ]),
+    deleteProduct(index) {
+      this.DELETE_PRODUCT(index);
     },
   },
 };

@@ -53,6 +53,7 @@ export default {
     right: 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 0 16px 16px 16px;
   }
 

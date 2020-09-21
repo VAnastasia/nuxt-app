@@ -1,42 +1,25 @@
 <template>
   <div class="main">
     <h2>{{title}}</h2>
-    <cart
-      v-if="CART.length"
-      :cartData="CART"
-    />
-    {{CART.length}}
-    <catalog />
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import Catalog from './Catalog.vue';
-import Cart from './Cart.vue';
-
 export default {
   name: 'Main',
-  components: {
-    Catalog,
-    Cart,
-  },
-  props: {
-
-  },
   data() {
     return {
       title: 'Диваны и кресла',
     };
   },
   computed: {
-    ...mapGetters([
-      'CART',
-    ]),
+
   },
   methods: {},
   watch: {},
-  mounted() {},
 };
 </script>
 
@@ -57,6 +40,7 @@ export default {
     align-items: center;
     border: 1px solid #1b1818;
     font-size: 20px;
-    line-height: 20px;;
+    line-height: 20px;
+    vertical-align: center;
   }
 </style>
