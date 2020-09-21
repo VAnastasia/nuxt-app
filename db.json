@@ -8,18 +8,6 @@
       "description": "",
       "size": "75x75",
       "color": "Графит",
-      "guarantee": "36 месяцев",
-      "category": "Пуфы и кресла"
-    },
-    {
-      "id": 2,
-      "name": "Пуф BOSS",
-      "image": "2.jpg",
-      "price": 9999,
-      "description": "",
-      "size": "75x75",
-      "color": "Серый",
-      "guarantee": "36 месяцев",
       "category": "Пуфы и кресла"
     },
     {
@@ -30,7 +18,6 @@
       "description": "",
       "size": "75x75",
       "color": "Бежевый",
-      "guarantee": "36 месяцев",
       "category": "Пуфы и кресла"
     },
     {
@@ -41,7 +28,6 @@
       "description": "",
       "size": "75x75",
       "color": "Песочный",
-      "guarantee": "36 месяцев",
       "category": "Пуфы и кресла"
     },
     {
@@ -52,52 +38,47 @@
       "description": "",
       "size": "75x75",
       "color": "Индиго",
-      "guarantee": "36 месяцев",
       "category": "Пуфы и кресла"
     },
     {
       "id": 6,
-      "name": "Диван МАДРИД",
+      "name": "DANDY",
       "image": "6.jpg",
-      "price": 9999,
+      "price": 12999,
       "description": "",
-      "size": "190x90",
-      "color": "Газета",
-      "guarantee": "18 месяцев",
-      "category": "Прямые диваны"
+      "size": "106x102",
+      "color": "Серый",
+      "category": "Пуфы и кресла"
     },
     {
       "id": 7,
-      "name": "Диван МАДРИД",
+      "name": "DANDY",
       "image": "7.jpg",
-      "price": 9999,
+      "price": 12999,
       "description": "",
-      "size": "190x90",
-      "color": "Серый",
-      "guarantee": "18 месяцев",
-      "category": "Прямые диваны"
+      "size": "106x102",
+      "color": "Синий",
+      "category": "Пуфы и кресла"
     },
     {
       "id": 8,
-      "name": "Диван МАДРИД",
+      "name": "DANDY",
       "image": "8.jpg",
-      "price": 9999,
+      "price": 12999,
       "description": "",
-      "size": "190x90",
-      "color": "Бежевый",
-      "guarantee": "18 месяцев",
-      "category": "Прямые диваны"
+      "size": "106x102",
+      "color": "Шоколадный",
+      "category": "Пуфы и кресла"
     },
     {
       "id": 9,
-      "name": "Диван МАДРИД",
+      "name": "DANDY",
       "image": "9.jpg",
-      "price": 9999,
+      "price": 12999,
       "description": "",
-      "size": "190x90",
-      "color": "Шоколадный",
-      "guarantee": "18 месяцев",
-      "category": "Прямые диваны"
+      "size": "106x102",
+      "color": "Медовый",
+      "category": "Пуфы и кресла"
     },
     {
       "id": 10,
@@ -107,7 +88,6 @@
       "description": "",
       "size": "200x90",
       "color": "Газета",
-      "guarantee": "18 месяцев",
       "category": "Прямые диваны"
     },
     {
@@ -118,7 +98,6 @@
       "description": "",
       "size": "200x90",
       "color": "Бежевый",
-      "guarantee": "18 месяцев",
       "category": "Прямые диваны"
     },
     {
@@ -129,7 +108,6 @@
       "description": "",
       "size": "200x90",
       "color": "Серый",
-      "guarantee": "18 месяцев",
       "category": "Прямые диваны"
     },
     {
@@ -140,7 +118,6 @@
       "description": "",
       "size": "220x105",
       "color": "Бежевый",
-      "guarantee": "18 месяцев",
       "category": "Прямые диваны"
     },
     {
@@ -151,7 +128,6 @@
       "description": "",
       "size": "220x105",
       "color": "Серый",
-      "guarantee": "18 месяцев",
       "category": "Прямые диваны"
     },
     {
@@ -162,7 +138,6 @@
       "description": "",
       "size": "220x105",
       "color": "Синий",
-      "guarantee": "18 месяцев",
       "category": "Прямые диваны"
     },
     {
@@ -173,7 +148,6 @@
       "description": "",
       "size": "220x105",
       "color": "Белый",
-      "guarantee": "18 месяцев",
       "category": "Прямые диваны"
     },
     {
@@ -184,7 +158,6 @@
       "description": "",
       "size": "260x165",
       "color": "Песочный",
-      "guarantee": "18 месяцев",
       "category": "Угловые диваны"
     },
     {
@@ -195,7 +168,6 @@
       "description": "",
       "size": "260x165",
       "color": "Шоколадный",
-      "guarantee": "18 месяцев",
       "category": "Угловые диваны"
     },
     {
@@ -206,7 +178,6 @@
       "description": "",
       "size": "260x165",
       "color": "Графит",
-      "guarantee": "18 месяцев",
       "category": "Угловые диваны"
     },
     {
@@ -217,7 +188,6 @@
       "description": "",
       "size": "300x155",
       "color": "Бежевый",
-      "guarantee": "18 месяцев",
       "category": "Угловые диваны"
     },
     {
@@ -228,7 +198,6 @@
       "description": "",
       "size": "300x155",
       "color": "Графит",
-      "guarantee": "18 месяцев",
       "category": "Угловые диваны"
     },
     {
@@ -239,7 +208,6 @@
       "description": "",
       "size": "300x155",
       "color": "Шоколадный",
-      "guarantee": "18 месяцев",
       "category": "Угловые диваны"
     }
   ]

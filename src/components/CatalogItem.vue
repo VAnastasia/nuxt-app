@@ -37,8 +37,13 @@ export default {
     position: relative;
     box-sizing: border-box;
     box-shadow: 0 0 8px 0 #e0e0e0;
-    margin-bottom: 16px;
+    margin-bottom: 2%;
+    margin-right: 2%;
     width: 32%;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 
   .catalog-item__image {

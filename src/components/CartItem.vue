@@ -8,9 +8,9 @@
     </div>
     <div class="cart-item__info">
       <div class="cart-item__count-block">
-        <button class="btn">-</button>
+        <button class="btn" @click="decrement">-</button>
         <div class="cart-item__count">{{cartItem.count}}</div>
-        <button class="btn">+</button>
+        <button class="btn" @click="increment">+</button>
       </div>
 
       <a class="cart-item__delete" @click="deleteProduct">Удалить</a>
@@ -37,6 +37,12 @@ export default {
   methods: {
     deleteProduct() {
       this.$emit('deleteProduct');
+    },
+    decrement() {
+      this.$emit('decrement');
+    },
+    increment() {
+      this.$emit('increment');
     },
   },
 };

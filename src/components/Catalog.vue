@@ -8,7 +8,6 @@
         v-for="product in PRODUCTS"
         :key="product.id"
         :item="product"
-        @getId="getId"
         @addToCart="addToCart"
       />
     </div>
