@@ -5,6 +5,10 @@
         <p><span>{{CART.length}}</span></p>
       </div>
     </router-link>
+    <div class="search">
+      <input type="text" class="search__input" v-model="searchValue">
+      <button title="Поиск" class="search__button" @click="onSearch"></button>
+    </div>
     <v-select
       :selected="selected"
       :options="categories"
@@ -43,6 +47,7 @@ export default {
       ],
       selected: 'Все',
       filtredProducts: [],
+      searchValue: '',
     };
   },
   mounted() {
@@ -62,6 +67,11 @@ export default {
     filterCategories(category) {
       this.filtredProducts = this.PRODUCTS.filter((item) => item.category === category.name);
       this.selected = category.name;
+    },
+    onSearch() {
+      this.filtredProducts = this.PRODUCTS.filter((item) => item.name.indexOf(this.searchValue) > 0
+        || item.color.indexOf(this.searchValue) > 0
+        || item.category.indexOf(this.searchValue) > 0);
     },
   },
   computed: {
@@ -114,5 +124,32 @@ export default {
       font-size: 10px;
       line-height: 20px;
     }
+  }
+
+  .search {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .search__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url('/images/search-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-color: transparent;
+    border: none;
+  }
+
+  .search__input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 10px 40px 10px 10px;
+    border: solid 1px #aeaeae;
   }
 </style>
