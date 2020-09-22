@@ -12,14 +12,9 @@ export default {
   name: 'Main',
   data() {
     return {
-      title: 'Диваны и кресла',
+      title: 'Интернет-магазин',
     };
   },
-  computed: {
-
-  },
-  methods: {},
-  watch: {},
 };
 </script>
 

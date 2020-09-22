@@ -1,7 +1,7 @@
 <template>
   <div class="cart">
     <router-link :to="{name: 'catalog'}">
-      <div class="catalog__cart-count">Вернуться в каталог</div>
+      <div class="cart__back">Вернуться в каталог</div>
     </router-link>
     <h2>Корзина</h2>
     <p v-if="!cartData.length">В корзине пусто</p>
@@ -76,5 +76,13 @@ export default {
       font-weight: normal;
       font-size: 16px;
     }
+  }
+
+  .cart__back {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 16px;
+    border: 1px solid #dedede;
   }
 </style>

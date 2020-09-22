@@ -1,7 +1,9 @@
 <template>
   <div>
     <router-link :to="{name: 'cart', params: {cartData: CART}}">
-      <div class="catalog__cart-count">{{CART.length}}</div>
+      <div class="catalog__cart-count">
+        <p><span>{{CART.length}}</span></p>
+      </div>
     </router-link>
     <v-select
       :selected="selected"
@@ -86,10 +88,31 @@ export default {
 
   .catalog__cart-count {
     position: absolute;
+    width: 40px;
+    height: 40px;
     top: 20px;
     right: 20px;
     box-sizing: border-box;
-    padding: 16px;
-    border: 1px solid #dedede;
+    background-image: url('/images/basket.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    p {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: -5px;
+      left: -5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: red;
+      color: #ffffff;
+      font-size: 10px;
+      line-height: 20px;
+    }
   }
 </style>
