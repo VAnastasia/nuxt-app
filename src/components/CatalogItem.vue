@@ -29,6 +29,9 @@ export default {
       this.$emit('addToCart', this.item);
     },
   },
+  mounted() {
+    this.$set(this.item, 'count', 1);
+  },
 };
 </script>
 

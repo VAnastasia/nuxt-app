@@ -31,9 +31,9 @@ export default {
       },
     },
   },
-  mounted() {
-    this.$set(this.cartItem, 'count', 1);
-  },
+  // mounted() {
+  //   this.$set(this.cartItem, 'count', 1);
+  // },
   methods: {
     deleteProduct() {
       this.$emit('deleteProduct');
