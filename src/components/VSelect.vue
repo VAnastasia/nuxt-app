@@ -63,7 +63,6 @@ export default {
 
 <style>
   .select {
-    margin-bottom: 20px;
     position: relative;
     z-index: 5;
     width: 200px;

@@ -1,5 +1,5 @@
 <template>
-  <div class="catalog-item" @click="getId">
+  <div class="catalog-item">
     <img class="catalog-item__image" :src="require(`../assets/images/${item.image}`)" alt="">
     <div class="catalog-item__bottom">
       <p class="catalog-item__name">{{item.name}}</p>

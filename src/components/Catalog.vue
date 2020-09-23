@@ -9,11 +9,22 @@
       <input type="text" class="search__input" v-model="searchValue">
       <button title="Поиск" class="search__button" @click="onSearch"></button>
     </div>
-    <v-select
-      :selected="selected"
-      :options="categories"
-      @select="filterCategories"
-    />
+    <div class="catalog__filters">
+      <v-select
+        :selected="selected"
+        :options="categories"
+        @select="filterCategories"
+      />
+      <div class="catalog__prices">
+        Сортировать по цене:
+        <v-select
+          :selected="selectedSort"
+          :options="prices"
+          @select="sortPrices"
+        />
+      </div>
+    </div>
+
     <div class="catalog">
       <catalog-item
         v-for="product in products"
@@ -41,11 +52,17 @@ export default {
     return {
       categories: [
         { name: 'Все', value: 'category-all' },
-        { name: 'Пуфы и кресла', value: 'category-1' },
-        { name: 'Прямые диваны', value: 'category-2' },
-        { name: 'Угловые диваны', value: 'category-3' },
+        { name: 'Пуф', value: 'category-1' },
+        { name: 'Кресло', value: 'category-2' },
+        { name: 'Прямой диван', value: 'category-3' },
+        { name: 'Угловой диван', value: 'category-4' },
+      ],
+      prices: [
+        { name: 'По возрастанию', value: 'up' },
+        { name: 'По убыванию', value: 'down' },
       ],
       selected: 'Все',
+      selectedSort: 'По возрастанию',
       filtredProducts: [],
       searchValue: '',
     };
@@ -58,20 +75,34 @@ export default {
       'GET_PRODUCTS',
       'ADD_TO_CART',
     ]),
-    getId(id) {
-      console.log(id);
-    },
     addToCart(data) {
       this.ADD_TO_CART(data);
     },
     filterCategories(category) {
+      this.searchValue = '';
       this.filtredProducts = this.PRODUCTS.filter((item) => item.category === category.name);
       this.selected = category.name;
     },
+    sortPrices(sortType) {
+      const products = this.filtredProducts.length > 0 ? this.filtredProducts : this.PRODUCTS;
+      if (sortType.name === 'По убыванию') {
+        this.filtredProducts = products.slice().sort((a, b) => b.price - a.price);
+      } else {
+        this.filtredProducts = products.slice().sort((a, b) => a.price - b.price);
+      }
+      this.selectedSort = sortType.name;
+    },
     onSearch() {
-      this.filtredProducts = this.PRODUCTS.filter((item) => item.name.indexOf(this.searchValue) > 0
-        || item.color.indexOf(this.searchValue) > 0
-        || item.category.indexOf(this.searchValue) > 0);
+      this.filtredProducts = this.PRODUCTS.filter((item) => {
+        const searchQuery = this.searchValue.toLowerCase();
+        const name = item.name.toLowerCase();
+        const color = item.color.toLowerCase();
+        const category = item.category.toLowerCase();
+
+        return name.indexOf(searchQuery) >= 0
+        || color.indexOf(searchQuery) >= 0
+        || category.indexOf(searchQuery) >= 0;
+      });
     },
   },
   computed: {
@@ -126,6 +157,21 @@ export default {
     }
   }
 
+  .catalog__filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+
+  }
+
+  .catalog__prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+  }
+
   .search {
     position: relative;
     margin-bottom: 20px;
@@ -151,5 +197,6 @@ export default {
     height: 40px;
     padding: 10px 40px 10px 10px;
     border: solid 1px #aeaeae;
+    font-size: 16px;
   }
 </style>

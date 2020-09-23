@@ -19,7 +19,7 @@ const store = new Vuex.Store({
         description: '',
         size: '75x75',
         color: 'Графит',
-        category: 'Пуфы и кресла',
+        category: 'Пуф',
       },
       {
         id: 3,
@@ -29,7 +29,7 @@ const store = new Vuex.Store({
         description: '',
         size: '75x75',
         color: 'Бежевый',
-        category: 'Пуфы и кресла',
+        category: 'Пуф',
       },
       {
         id: 4,
@@ -39,7 +39,7 @@ const store = new Vuex.Store({
         description: '',
         size: '75x75',
         color: 'Песочный',
-        category: 'Пуфы и кресла',
+        category: 'Пуф',
       },
       {
         id: 5,
@@ -49,7 +49,7 @@ const store = new Vuex.Store({
         description: '',
         size: '75x75',
         color: 'Индиго',
-        category: 'Пуфы и кресла',
+        category: 'Пуф',
       },
       {
         id: 6,
@@ -59,7 +59,7 @@ const store = new Vuex.Store({
         description: '',
         size: '106x102',
         color: 'Серый',
-        category: 'Пуфы и кресла',
+        category: 'Кресло',
       },
       {
         id: 7,
@@ -69,7 +69,7 @@ const store = new Vuex.Store({
         description: '',
         size: '106x102',
         color: 'Синий',
-        category: 'Пуфы и кресла',
+        category: 'Кресло',
       },
       {
         id: 8,
@@ -79,7 +79,7 @@ const store = new Vuex.Store({
         description: '',
         size: '106x102',
         color: 'Шоколадный',
-        category: 'Пуфы и кресла',
+        category: 'Кресло',
       },
       {
         id: 9,
@@ -89,7 +89,7 @@ const store = new Vuex.Store({
         description: '',
         size: '106x102',
         color: 'Медовый',
-        category: 'Пуфы и кресла',
+        category: 'Кресло',
       },
       {
         id: 10,
@@ -99,7 +99,7 @@ const store = new Vuex.Store({
         description: '',
         size: '200x90',
         color: 'Газета',
-        category: 'Прямые диваны',
+        category: 'Прямой диван',
       },
       {
         id: 11,
@@ -109,7 +109,7 @@ const store = new Vuex.Store({
         description: '',
         size: '200x90',
         color: 'Бежевый',
-        category: 'Прямые диваны',
+        category: 'Прямой диван',
       },
       {
         id: 12,
@@ -119,7 +119,7 @@ const store = new Vuex.Store({
         description: '',
         size: '200x90',
         color: 'Серый',
-        category: 'Прямые диваны',
+        category: 'Прямой диван',
       },
       {
         id: 13,
@@ -129,7 +129,7 @@ const store = new Vuex.Store({
         description: '',
         size: '220x105',
         color: 'Бежевый',
-        category: 'Прямые диваны',
+        category: 'Прямой диван',
       },
       {
         id: 14,
@@ -139,7 +139,7 @@ const store = new Vuex.Store({
         description: '',
         size: '220x105',
         color: 'Серый',
-        category: 'Прямые диваны',
+        category: 'Прямой диван',
       },
       {
         id: 15,
@@ -149,7 +149,7 @@ const store = new Vuex.Store({
         description: '',
         size: '220x105',
         color: 'Синий',
-        category: 'Прямые диваны',
+        category: 'Прямой диван',
       },
       {
         id: 16,
@@ -159,7 +159,7 @@ const store = new Vuex.Store({
         description: '',
         size: '220x105',
         color: 'Белый',
-        category: 'Прямые диваны',
+        category: 'Прямой диван',
       },
       {
         id: 17,
@@ -169,7 +169,7 @@ const store = new Vuex.Store({
         description: '',
         size: '260x165',
         color: 'Песочный',
-        category: 'Угловые диваны',
+        category: 'Угловой диван',
       },
       {
         id: 18,
@@ -179,7 +179,7 @@ const store = new Vuex.Store({
         description: '',
         size: '260x165',
         color: 'Шоколадный',
-        category: 'Угловые диваны',
+        category: 'Угловой диван',
       },
       {
         id: 19,
@@ -189,7 +189,7 @@ const store = new Vuex.Store({
         description: '',
         size: '260x165',
         color: 'Графит',
-        category: 'Угловые диваны',
+        category: 'Угловой диван',
       },
       {
         id: 20,
@@ -199,7 +199,7 @@ const store = new Vuex.Store({
         description: '',
         size: '300x155',
         color: 'Бежевый',
-        category: 'Угловые диваны',
+        category: 'Угловой диван',
       },
       {
         id: 21,
@@ -209,7 +209,7 @@ const store = new Vuex.Store({
         description: '',
         size: '300x155',
         color: 'Графит',
-        category: 'Угловые диваны',
+        category: 'Угловой диван',
       },
       {
         id: 22,
@@ -219,7 +219,7 @@ const store = new Vuex.Store({
         description: '',
         size: '300x155',
         color: 'Шоколадный',
-        category: 'Угловые диваны',
+        category: 'Угловой диван',
       },
     ],
     cart: [],
